@@ -1,0 +1,66 @@
+{
+  "schema_version": 2,
+  "experiment_id": "stressng-sweep",
+  "run_id": "stressng-sweep.20261013T145012Z.s1791903012",
+  "timestamps_note": "UTC, explicit offset; epoch is authoritative, this string is for humans",
+  "node": "node2",
+  "seed": 1791903012,
+  "lambda_unit": "percent",
+  "periods_s": {
+    "t_s": 60.0,
+    "t_m": 300.0,
+    "t_d": 60.0
+  },
+  "idle_levels": 3,
+  "rates": [
+    10.0,
+    20.0,
+    30.0,
+    40.0,
+    50.0,
+    60.0,
+    70.0,
+    80.0,
+    90.0,
+    100.0
+  ],
+  "dry_run": false,
+  "dry_scale": null,
+  "preflight": [
+    {
+      "metric": "hardware_rapl_energy_joules_total",
+      "status": "ok (2 series)",
+      "claim_if_absent": "every energy result, and therefore `b` in watts and all energy-per-unit-of-work"
+    },
+    {
+      "metric": "hardware_cpu_seconds_total",
+      "status": "ok (8 series)",
+      "claim_if_absent": "every CPU-time result, and the comparison of energy shape against CPU shape"
+    },
+    {
+      "metric": "hardware_cgroup_root_cpu_seconds_total",
+      "status": "ok (3 series)",
+      "claim_if_absent": "whether node CPU time is accounted for by the control-group hierarchy"
+    }
+  ],
+  "interval_check": [
+    "measured cadence 10.00 s (slowest reference metric: hardware_rapl_energy_joules_total)",
+    "t_m=300.0s clears the usable floor 170.0s",
+    "split piece 150.0s = 15 cadence periods exactly"
+  ],
+  "refused_but_forced": false,
+  "cadence_json": "/data/cadence.json",
+  "generator_cmd_template": "curl -sS --fail-with-body -X POST http://stress-control.tdk-measurement.svc.cluster.local/load?workers=12&load={rate}&duration={duration}",
+  "grafana_annotations": "not configured",
+  "started": 1791903012.6750472,
+  "started_iso": "2026-10-13T14:50:12.675047+00:00",
+  "finished": 1791908472.7371957,
+  "finished_iso": "2026-10-13T16:21:12.737196+00:00",
+  "archive_window": {
+    "start": 1791902952.6750472,
+    "end": 1791908532.7371957,
+    "start_iso": "2026-10-13T14:49:12.675047+00:00",
+    "end_iso": "2026-10-13T16:22:12.737196+00:00",
+    "margin_s": 60.0
+  }
+}

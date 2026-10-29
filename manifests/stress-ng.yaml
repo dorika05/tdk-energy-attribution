@@ -1,0 +1,21 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: stress-ng
+  namespace: tdk-measurement
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: stress-ng
+  template:
+    metadata:
+      labels:
+        app: stress-ng
+    spec:
+      nodeSelector:
+        kubernetes.io/hostname: node2
+      containers:
+      - name: stress-ng
+        image: ubuntu:24.04
+        command: ["/bin/bash", "-c", "apt-get update && apt-get install -y stress-ng && sleep infinity"]
