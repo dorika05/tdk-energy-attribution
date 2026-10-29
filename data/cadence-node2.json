@@ -1,0 +1,313 @@
+{
+  "measured_at": 1791803437.5778801,
+  "measured_at_iso": "2026-10-12T11:10:37.577880+00:00",
+  "timestamps_note": "UTC, explicit offset; epoch is authoritative, this string is for humans",
+  "window_hours": 2.0,
+  "node": "node2",
+  "metrics": [
+    {
+      "role": "energy reference",
+      "metric": "hardware_rapl_energy_joules_total",
+      "status": "ok",
+      "series": 2,
+      "series_too_short": 0,
+      "samples": 1440,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "cgroup root closure",
+      "metric": "hardware_cgroup_root_cpu_seconds_total",
+      "status": "ok",
+      "series": 3,
+      "series_too_short": 0,
+      "samples": 2160,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "node CPU modes",
+      "metric": "hardware_cpu_seconds_total",
+      "status": "ok",
+      "series": 8,
+      "series_too_short": 0,
+      "samples": 5760,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "per-core CPU modes",
+      "metric": "hardware_cpu_core_seconds_total",
+      "status": "ok",
+      "series": 128,
+      "series_too_short": 0,
+      "samples": 92160,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "C-state residency",
+      "metric": "hardware_cpu_cstate_residency_microseconds_total",
+      "status": "ok",
+      "series": 5,
+      "series_too_short": 0,
+      "samples": 3600,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "CPU frequency",
+      "metric": "hardware_cpu_frequency_average_hertz",
+      "status": "ok",
+      "series": 1,
+      "series_too_short": 0,
+      "samples": 720,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "thermal throttle",
+      "metric": "hardware_cpu_thermal_throttle_total",
+      "status": "ok",
+      "series": 1,
+      "series_too_short": 0,
+      "samples": 720,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "softirq/NAPI witness",
+      "metric": "hardware_softnet_squeezed_total",
+      "status": "ok",
+      "series": 16,
+      "series_too_short": 0,
+      "samples": 11520,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "kthread CPU",
+      "metric": "hardware_kthread_cpu_seconds_total",
+      "status": "ok",
+      "series": 23,
+      "series_too_short": 0,
+      "samples": 16560,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "node-exporter CPU",
+      "metric": "node_cpu_seconds_total",
+      "status": "ok",
+      "series": 896,
+      "series_too_short": 0,
+      "samples": 645120,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 9.988,
+      "max_s": 10.012,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "cAdvisor container CPU",
+      "metric": "container_cpu_usage_seconds_total",
+      "status": "ok",
+      "series": 26,
+      "series_too_short": 0,
+      "samples": 11289,
+      "median_s": 16.155,
+      "p05_s": 10.627,
+      "p95_s": 26.222,
+      "min_s": 10.002,
+      "max_s": 30.0,
+      "per_series_median_spread_s": 3.853,
+      "jitter_s": 15.595
+    },
+    {
+      "role": "under test: Kepler",
+      "metric": "kepler_node_cpu_joules_total",
+      "status": "ok",
+      "series": 2,
+      "series_too_short": 0,
+      "samples": 1440,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 10.0,
+      "max_s": 10.0,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    },
+    {
+      "role": "under test: Scaphandre",
+      "metric": "scaph_host_energy_microjoules",
+      "status": "ok",
+      "series": 1,
+      "series_too_short": 0,
+      "samples": 720,
+      "median_s": 10.0,
+      "p05_s": 10.0,
+      "p95_s": 10.0,
+      "min_s": 9.998,
+      "max_s": 10.002,
+      "per_series_median_spread_s": 0.0,
+      "jitter_s": 0.0
+    }
+  ],
+  "derivation": {
+    "slowest_reference_metric": "hardware_rapl_energy_joules_total",
+    "period_s": 10.0,
+    "jitter_s": 0.0,
+    "t_m_hard_floor_s": 50.0,
+    "t_m_usable_floor_s": 170.0,
+    "samples_per_half_hard": 2,
+    "samples_per_half_usable": 8,
+    "alias_tolerance": 0.1,
+    "admissible_subinterval_bands_s": [
+      [
+        19.0,
+        21.0,
+        2
+      ],
+      [
+        29.0,
+        31.0,
+        3
+      ],
+      [
+        39.0,
+        41.0,
+        4
+      ],
+      [
+        49.0,
+        51.0,
+        5
+      ],
+      [
+        59.0,
+        61.0,
+        6
+      ],
+      [
+        69.0,
+        71.0,
+        7
+      ],
+      [
+        79.0,
+        81.0,
+        8
+      ],
+      [
+        89.0,
+        91.0,
+        9
+      ],
+      [
+        99.0,
+        101.0,
+        10
+      ],
+      [
+        109.0,
+        111.0,
+        11
+      ],
+      [
+        119.0,
+        121.0,
+        12
+      ]
+    ],
+    "aliasing_subinterval_bands_s": [
+      [
+        21.0,
+        29.0
+      ],
+      [
+        31.0,
+        39.0
+      ],
+      [
+        41.0,
+        49.0
+      ],
+      [
+        51.0,
+        59.0
+      ],
+      [
+        61.0,
+        69.0
+      ],
+      [
+        71.0,
+        79.0
+      ],
+      [
+        81.0,
+        89.0
+      ],
+      [
+        91.0,
+        99.0
+      ],
+      [
+        101.0,
+        109.0
+      ],
+      [
+        111.0,
+        119.0
+      ]
+    ]
+  }
+}
